@@ -3,7 +3,7 @@ class ActionsController < ApplicationController
   def index
     @services = Service.all
     # render 'index.json.jbuilder'
-    render 'index.erb'
+    render 'index.html.erb'
   end
 
 
