@@ -6,6 +6,10 @@ class ActionsController < ApplicationController
     render 'index.erb'
   end
 
+  def calendar
+    render '_calendar.html.erb'
+  end
+
 
   # def show
   #   @service = Service.find(params[:id])
