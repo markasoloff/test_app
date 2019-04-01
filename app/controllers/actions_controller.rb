@@ -2,12 +2,12 @@ class ActionsController < ApplicationController
 
   def index
     @services = Service.all
-    # render 'index.json.jbuilder'
+    @events = Event.all
     render 'index.erb'
   end
 
   def calendar
-    render '_calendar.html.erb'
+    render 'actions/calendar.erb'
   end
 
 
