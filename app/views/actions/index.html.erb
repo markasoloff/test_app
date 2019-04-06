@@ -57,13 +57,10 @@
 								<span class="image main"><img src="images/pic03.jpg" alt="" /></span>
 								<div>
 									<p>
-								  <h2>Pretend Event (hardcoded)</h2>
-								  <h4>Begins: Tuesday, April 14, 2019</h4>
-								  <h4>Ends: Wednesday, April 15, 2019</h4>
-								  <br>
-								  <h2>Second Pretend Event (hardcoded)</h2>
-								  <h4>Begins: Tuesday, April 14, 2019</h4>
-								  <h4>Ends: Wednesday, April 15, 2019</h4>
+										<% @offerings.each do |offering| %>
+										  <h2><%= offering["name"] %></h2>
+										  <h4><%= offering["description"] %></h4>
+										<% end %>
 								</p>
 								</div>
 

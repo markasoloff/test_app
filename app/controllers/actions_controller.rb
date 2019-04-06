@@ -1,8 +1,7 @@
 class ActionsController < ApplicationController
 
   def index
-    @services = Service.all
-    @events = Event.all
+    @offerings = Offering.all
     render 'actions/index.html.erb'
   end
 
